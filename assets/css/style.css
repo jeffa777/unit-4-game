@@ -1,0 +1,15 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/*background image for body*/
+.bg {
+  background-image: url(https://wallpapertag.com/wallpaper/full/5/d/d/579959-free-crystal-hd-wallpapers-1920x1080.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: silver;
+  font-weight: bold;
+}

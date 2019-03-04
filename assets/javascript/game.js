@@ -1,25 +1,50 @@
-// random computer number options for game
-var comprandomnumb = [];
-for(var i = 19; i <= 120; i++) {
-    comprandomnumb.push(i);
-}
-console.log(comprandomnumb);
+$(document).ready(function() {
 
-//random user/crystal number options for game
-var crystalnumb = [];
-for(var i = 1; i <= 12; i++) {
-    crystalnumb.push(i);
-}
-console.log(crystalnumb);
 //variables -
 var randomstartnumb = 0;
-var crystalstartnumb = 0;
 var wins = 0;
-var losses =0;
+var losses = 0;
 var userscore = 0;
+var crystalnumb1 = 0;
+var crystalnumb2 = 0;
+var crystalnumb3 = 0;
+var crystalnumb4 = 0;
 
-
-document.onclick = function(event) {
-    randomstartnumb = comprandomnumb[Math.floor(Math.random()*comprandomnumb.length)];
-    crystalstartnumb = crystalnumb[Math.floor(Math.random()*crystalnumb.length)];   
+// random computer number options for game
+function randomnumbers() {
+randomstartnumb = Math.floor((Math.random() * 120) + 19);
+crystalnumb1 = Math.floor((Math.random() * 12) + 1);
+crystalnumb2 = Math.floor((Math.random() * 12) + 1);
+crystalnumb3 = Math.floor((Math.random() * 12) + 1);
+crystalnumb4 = Math.floor((Math.random() * 12) + 1);
 }
+
+function reset() {
+    randomnumbers();
+    userscore = 0;
+    $("#randomstartnumb").text(randomstartnumb);
+    $("#userscore").text(userscore);
+    $("#image1").attr("data-crystalvalue", crystalnumb1);
+    $("#image2").attr("data-crystalvalue", crystalnumb2);
+    $("#image3").attr("data-crystalvalue", crystalnumb3);
+    $("#image4").attr("data-crystalvalue", crystalnumb4);
+    $("#wins").text(wins);
+    $('#losses').text(losses);
+}
+
+function youWin() {
+    $("#wins").text("You Win!");
+    wins++;
+    $("#wins").text(wins);
+}
+
+function youLose() {
+    $("#losses").text("You lose!");
+    losses++;
+    $("#losses").text(losses);
+}
+
+
+
+
+})
