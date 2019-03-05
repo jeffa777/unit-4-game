@@ -44,3 +44,9 @@ h2 {
   opacity: 0.75;
   width: 65%;
 }
+
+#Wins, #Losses {
+  margin-left: 100px;
+  color:rgb(232, 248, 8); 
+  font-size: 23px;
+}
