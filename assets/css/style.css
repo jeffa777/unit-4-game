@@ -13,3 +13,34 @@ body, html {
   color: silver;
   font-weight: bold;
 }
+
+.buttons, .winlose, .title {
+  margin-left: 50px;
+}
+
+.compscorebox, .userscorebox {
+  margin-left: 100px;
+}
+
+#maintitle {
+  margin-left: 500px;
+  font-size: 38px;
+  color: red;
+}
+
+.winlose, #userscore, h3 {
+  font-size: 23px;
+  color:rgb(232, 248, 8);
+}
+
+h2 {
+  font-size: 25px;
+  text-decoration: underline;
+  color:rgb(16, 233, 34);
+}
+
+#game {
+  background-color: rgb(21, 47, 133);
+  opacity: 0.75;
+  width: 65%;
+}
